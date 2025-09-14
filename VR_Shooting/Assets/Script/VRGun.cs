@@ -8,7 +8,7 @@ public class VRGun : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform muzzle;
-    public float bulletSpeed = 30f;
+    public float bulletSpeed = 40f;
     public AudioClip shootSfx;
 
     XRGrabInteractable grab;
