@@ -1,12 +1,11 @@
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.XR.CoreUtils;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent navMeshAgent;
-    [SerializeField] private XROrigin player;
+    [SerializeField] private GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -16,6 +15,11 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        player = FindObjectOfType<XROrigin>();
+        player = GameObject.Find("XR Origin (XR Rig)");
+    }
+
+    private void Update()
+    {
+        navMeshAgent.destination = player.transform.position;
     }
 }
