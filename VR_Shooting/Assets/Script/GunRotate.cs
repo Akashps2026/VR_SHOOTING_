@@ -1,3 +1,4 @@
+using MikeNspired.XRIStarterKit;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -5,6 +6,8 @@ public class GunRotate : MonoBehaviour
 {
 
     public float  Speed =10;
+    
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,5 +18,7 @@ public class GunRotate : MonoBehaviour
     void Update()
     {
        transform.Rotate(Vector3.up*Speed*Time.deltaTime);
+
+        
     }
 }
