@@ -1,26 +1,23 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab;   
-    public Transform spawnPoint;     
-    public float spawnInterval = 2f; 
-    public int maxEnemies = 1;      
+    [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private bool isGameOver = false;
 
-    private int enemyCount = 0;
 
-    void Start()
+    private IEnumerator EnemySpawnCoroutine()
     {
-       
-        InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
+        while (!isGameOver)
+        {
+            GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
+            yield return new WaitForSeconds(0.5f);
+        }
     }
-
-    void SpawnEnemy()
+    public void SpawnEnemy()
     {
-        if (enemyCount >= maxEnemies) return;
-
-       
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-        enemyCount++;
+        StartCoroutine(EnemySpawnCoroutine());
     }
 }
