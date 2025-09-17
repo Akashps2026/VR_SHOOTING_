@@ -32,7 +32,7 @@ public class VRGun : MonoBehaviour
     void Shoot()
     {
         if (bulletPrefab == null || muzzle == null) return;
-        var b = Instantiate(bulletPrefab, muzzle.position, Quaternion.Euler(-90f,0,0));
+        var b = Instantiate(bulletPrefab, muzzle.position, Quaternion.Euler(90f,0,0));
         var rb = b.GetComponent<Rigidbody>();
         if (rb != null) rb.linearVelocity = muzzle.forward * bulletSpeed;
         if (shootSfx != null) AudioSource.PlayClipAtPoint(shootSfx, muzzle.position);
