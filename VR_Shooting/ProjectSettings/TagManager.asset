@@ -7,11 +7,12 @@ TagManager:
   - Bullet
   - Target
   - Gun
+  - projectile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Teleport
   - Water
   - UI
   - Enemy
