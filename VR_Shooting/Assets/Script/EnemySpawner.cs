@@ -18,6 +18,6 @@ public class EnemySpawner : MonoBehaviour
     }
     public void SpawnEnemy()
     {
-        StartCoroutine(EnemySpawnCoroutine());
+        StartCoroutine(EnemySpawnCoroutine()); 
     }
 }
