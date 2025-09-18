@@ -16556,6 +16556,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400040, guid: 69560b8489478d14ead5ab6d3c4b0ec7, type: 3}
   m_PrefabInstance: {fileID: 611496754}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &614496179
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1384874296769462036, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'root'\n\tTransform 'lowerarm_l'\n\tTransform
+        'root'\n\tTransform 'neck_01'\n\tTransform 'clavicle_l'\n\tTransform 'hand_l'\n\tTransform
+        'spine_02'\n\tTransform 'upperarm_r'\n\tTransform 'upperarm_l'\n\tTransform
+        'thigh_l'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.971
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.487
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757827796395095045, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259705607721039833, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_Name
+      value: Enemy 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724862585550718237, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
 --- !u!1 &623293062
 GameObject:
   m_ObjectHideFlags: 0
@@ -33685,7 +33755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c7472a2c135db4fb249605b8c380f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 3541374962580817410, guid: 3d7a9723fba04de40a634782912ac713, type: 3}
+  enemyPrefab: {fileID: 4259705607721039833, guid: a6be16f397caa274a80fe3fd12c4c07c, type: 3}
   spawnPoint: {fileID: 33572119}
   isGameOver: 0
   enemyCount: 0
@@ -44355,3 +44425,4 @@ SceneRoots:
   - {fileID: 1799393327}
   - {fileID: 249911134}
   - {fileID: 877617899}
+  - {fileID: 614496179}
