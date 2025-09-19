@@ -2080,10 +2080,10 @@ GameObject:
   - component: {fileID: 1757827796395095045}
   - component: {fileID: 1384874296769462036}
   - component: {fileID: 6138046968411889742}
-  - component: {fileID: 4417834315598577605}
   - component: {fileID: 6993942783038618968}
   - component: {fileID: 2126607796680104036}
   - component: {fileID: 246320243022242172}
+  - component: {fileID: 1092191578957092780}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Target
@@ -2117,7 +2117,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4259705607721039833}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: e88b81dbbde6e97419fd1f6bdc41d4ca, type: 3}
+  m_Avatar: {fileID: 9000000, guid: ee7e8c262b59ace4b889834527bf9035, type: 3}
   m_Controller: {fileID: 9100000, guid: f21940375ececca4bb7e0b27f9980ca3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -2125,7 +2125,12 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'root'\n\tTransform 'lowerarm_l'\n\tTransform
+    'root'\n\tTransform 'neck_01'\n\tTransform 'clavicle_l'\n\tTransform 'hand_l'\n\tTransform
+    'spine_02'\n\tTransform 'upperarm_r'\n\tTransform 'upperarm_l'\n\tTransform 'thigh_l'\n\tand
+    more ...\n\tFrom animation clip 'mixamo.com'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -2145,27 +2150,6 @@ MonoBehaviour:
   BodyMaterials:
   - {fileID: 2100000, guid: cde7794b72ba29b4fbab0dc5d3c3faf0, type: 2}
   eyesGlow: 1
---- !u!65 &4417834315598577605
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4259705607721039833}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.3580513, y: 1.7394743, z: 1}
-  m_Center: {x: -0.0071407557, y: 0.8538735, z: 0}
 --- !u!114 &6993942783038618968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2190,7 +2174,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 0.3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2216,6 +2200,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 2126607796680104036}
   player: {fileID: 0}
+--- !u!136 &1092191578957092780
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259705607721039833}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.8207271
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.90040696, z: 0}
 --- !u!1 &4351679582918804596
 GameObject:
   m_ObjectHideFlags: 0
