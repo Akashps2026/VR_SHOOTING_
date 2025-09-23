@@ -5,7 +5,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Transform spawnPoint;
-    
+    [SerializeField] private Transform spawnPoint1;
     [SerializeField] private bool isGameOver = false;
     public int enemyCount= 0;
     public int enemyMaxCount = 15;

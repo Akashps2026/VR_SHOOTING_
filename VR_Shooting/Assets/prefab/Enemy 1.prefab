@@ -2200,6 +2200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 2126607796680104036}
   player: {fileID: 0}
+  killManager: {fileID: 0}
 --- !u!136 &1092191578957092780
 CapsuleCollider:
   m_ObjectHideFlags: 0
