@@ -2083,6 +2083,7 @@ GameObject:
   - component: {fileID: 6993942783038618968}
   - component: {fileID: 2126607796680104036}
   - component: {fileID: 1092191578957092780}
+  - component: {fileID: 4786123750794401236}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Target
@@ -2124,12 +2125,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'root'\n\tTransform 'lowerarm_l'\n\tTransform
-    'root'\n\tTransform 'neck_01'\n\tTransform 'clavicle_l'\n\tTransform 'hand_l'\n\tTransform
-    'spine_02'\n\tTransform 'upperarm_r'\n\tTransform 'upperarm_l'\n\tTransform 'thigh_l'\n\tand
-    more ...\n\tFrom animation clip 'mixamo.com'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -2208,6 +2204,21 @@ CapsuleCollider:
   m_Height: 1.8207271
   m_Direction: 1
   m_Center: {x: 0, y: 0.90040696, z: 0}
+--- !u!114 &4786123750794401236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259705607721039833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ea9d56cd6a41743b5650dc4b49d67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMeshAgent: {fileID: 2126607796680104036}
+  player: {fileID: 0}
+  killManager: {fileID: 0}
 --- !u!1 &4351679582918804596
 GameObject:
   m_ObjectHideFlags: 0

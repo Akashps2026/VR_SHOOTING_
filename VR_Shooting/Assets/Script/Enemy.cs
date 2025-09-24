@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        player = GameObject.Find("XR Origin (XR Rig)");
+        player = GameObject.Find("Player");
         killManager = FindObjectOfType<EnemyKillManager>();
     }
 

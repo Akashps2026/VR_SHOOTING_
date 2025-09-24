@@ -23,6 +23,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     { 
         RaycastHit hit;
         Physics.Raycast(VRGun.transform.position, VRGun.transform.forward, out hit, Range);
-        Debug.Log(hit.transform.name);
+        //Debug.Log(hit.transform.name);
     }
 }
