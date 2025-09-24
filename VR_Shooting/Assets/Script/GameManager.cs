@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public int score;
     public Text scoreText;
     [SerializeField] private EnemySpawner enemySpawner;
-    [SerializeField] private EnemySpawner enemySpawner1;
+   
     void Start()
     {
         UpdateUI();
