@@ -20,6 +20,8 @@ public class VRGun : MonoBehaviour
         grab.selectExited.AddListener(OnSelectExited);
         grab.activated.AddListener(OnActivated);
     }
+     
+
 
     void OnSelectEntered(SelectEnterEventArgs args) { /* optional: visual change */ }
     void OnSelectExited(SelectExitEventArgs args) { /* optional */ }

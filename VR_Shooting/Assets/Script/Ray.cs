@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class NewMonoBehaviour: MonoBehaviour
 {
 
     public float Range;
