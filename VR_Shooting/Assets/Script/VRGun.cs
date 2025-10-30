@@ -23,8 +23,8 @@ public class VRGun : MonoBehaviour
      
 
 
-    void OnSelectEntered(SelectEnterEventArgs args) { /* optional: visual change */ }
-    void OnSelectExited(SelectExitEventArgs args) { /* optional */ }
+    void OnSelectEntered(SelectEnterEventArgs args) {  }
+    void OnSelectExited(SelectExitEventArgs args) {  }
 
     void OnActivated(ActivateEventArgs args)
     {
